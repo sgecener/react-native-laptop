@@ -25,7 +25,7 @@ class Reservation extends Component {
         this.setState({showModal: !this.state.showModal});
     }
 
-    handleReservation(){
+    handleReservation() {
         console.log(JSON.stringify(this.state));
         this.toggleModal();
     }
@@ -94,7 +94,7 @@ class Reservation extends Component {
                 )}
                 <View style={styles.formRow}>
                     <Button 
-                        onPress={() => this.handleReservation}
+                        onPress={() => this.handleReservation()}
                         title='Search'
                         color='#5637DD'
                         accessibilityLabel='Tap to search for available campsites to reserve'
